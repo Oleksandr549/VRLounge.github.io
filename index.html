@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230830053506" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&_v=20230830053506" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20230830053506" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&_v=20230830053506" rel="stylesheet" />
+
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="stars"></div>
+		<div class="twinkling"></div>
+
+		<header class="header">
+			<div class="header__container">
+				<a class="logo" href="index.html"> <img src="img/icons/White logo.svg" alt=""></a>
+				<ul class="nav-container">
+					<button type="button" class="close"><span class="icon-close"></span></button>
+					<li class="hover-trigger element-animation"><a href="project.html">Portfolio</a>
+						<!-- <ul>
+				<li><a href="#">Spoty reklamowe</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li><a href="#">Strony internetowe</a></li>
+			 </ul> -->
+					</li>
+
+					<li class="hover-trigger element-animation"><a href="#">Kontakt</a></li>
+					<li class="hover-trigger element-animation"><a href="#">Kontakt</a></li>
+					<li class="hover-trigger element-animation"><a href="#">Kontakt</a></li>
+					<button type="button" class="btn-gr">Your Virtual Land</button>
+				</ul>
+				<div class="burger_menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- <div class="nav-container">
+ 
+		  <a href="index.html"> <picture><source srcset="img/Logo.webp" type="image/webp"><img class="logo" src="img/Logo.png" alt="logo"></picture></a>
+		  <button type="button" class="close"><span class="icon-close"></span></button>
+ 
+		  <ul>
+			 <li class="spoiler-trigger"><a href="project.html">Portfolio</a>
+ 
+			 </li>
+			 <ul class="spoiler-block">
+				<li><a href="#">Spoty reklamowe</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li><a href="#">Strony internetowe</a></li>
+			 </ul>
+			 <li><a href="contact.html">Kontakt</a></li>
+		  </ul>
+	   </div> -->
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="home_main">
+				<canvas class="background" style="width: 107%;height: 107%;"></canvas>
+				<div class="home__container ">
+					<div class="home_content">
+						<h2 class="title-home title-gr element-animation">
+							What is <br> <span> Virtual Reality</span>
+						</h2>
+						<p class="content-text element-animation">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur recusandae similique natus repellat eum, aspernatur reprehenderit voluptates iste! Nesciunt qui impedit aliquid laborum!
+						</p>
+						<button type="button" class="btn-gr-bor element-animation">Subcribe Now</button>
+					</div>
+					<div class="home-img element-animation">
+						<img id="d-icon-1" src="img/icons/Star 1.svg" alt="icon">
+						<img id="d-icon-2" src="img/icons/Ellipse 1.svg" alt="icon">
+						<img id="d-icon-4" src="img/icons/Ellipse 2.svg" alt="icon">
+						<img id="d-icon-3" src="img/icons/Ellipse 2.svg" alt="icon">
+
+						<span class="d-element"></span>
+						<picture><source srcset="img/man-removebg.webp" type="image/webp"><img class="main-img" src="img/man-removebg.png" alt="img"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="main_swipers">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><picture><source srcset="img/IMG_8342.webp" type="image/webp"><img src="img/IMG_8342.jpeg" alt=""></picture></div>
+						<div class="swiper-slide"><picture><source srcset="img/IMG_8344.webp" type="image/webp"><img src="img/IMG_8344.jpeg" alt=""></picture></div>
+						<div class="swiper-slide"><picture><source srcset="img/AR_VR.webp" type="image/webp"><img src="img/AR_VR.png" alt=""></picture></div>
+						<div class="swiper-slide"><picture><source srcset="img/man.webp" type="image/webp"><img src="img/man.jpg" alt=""></picture></div>
+						<div class="swiper-slide"><picture><source srcset="img/man2.webp" type="image/webp"><img src="img/man2.jpg" alt=""></picture></div>
+						<div class="swiper-slide"><picture><source srcset="img/shutterstock.webp" type="image/webp"><img src="img/shutterstock.webp" alt=""></picture></div>
+						<div class="swiper-slide"><picture><source srcset="img/man4.webp" type="image/webp"><img src="img/man4.jpg" alt=""></picture></div>
+					</div>
+				</div>
+			</section>
+			<section class="card-section">
+				<h2 class="_title"> Pictures of Equipment</h2>
+				<div class="card__container">
+					<div id="cards" class="container">
+						<card data-image="img/IMG_8342.jpeg">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+						<card data-image="img/IMG_8344.jpeg">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+						<card data-image="img/AR_VR.png">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+						<card data-image="img/IMG_8342.jpeg">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+						<card data-image="img/man4.jpg">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+						<card data-image="img/AR_VR.png">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+						<card data-image="img/shutterstock.webp">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+						<card data-image="img/IMG_8344.jpeg">
+							<h1 slot="header">Product</h1>
+							<p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</card>
+
+
+					</div>
+				</div>
+
+			</section>
+			<section class="level_main ">
+				<div class="swiper mySwiperlevel">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class=" level__container">
+								<div>
+									<h2 class="_title element-animation2">
+										Lorem ipsum dolor sit amet.
+									</h2>
+									<div class="level-box element-animation2">
+										<p><span>10 </span> Lorem, ipsum.</p>
+										<p><span>2 </span> Lorem, ipsum.</p>
+										<p><span>150 </span> Lorem, ipsum.</p>
+										<p><span>20 000</span> Lorem </p>
+									</div>
+								</div>
+								<div class="circle-container circle-animation element-animation2">
+									<div class="text">2020</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class=" level__container">
+								<div>
+									<h2 class="_title element-animation2">
+										Lorem ipsum dolor sit amet.
+									</h2>
+									<div class="level-box element-animation2">
+										<p><span>10 </span> Lorem, ipsum.</p>
+										<p><span>2 </span> Lorem, ipsum.</p>
+										<p><span>150 </span> Lorem, ipsum.</p>
+										<p><span>20 000</span> Lorem </p>
+									</div>
+								</div>
+								<div class="circle-container circle-animation element-animation2">
+									<div class="text">2020</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class=" level__container">
+								<div>
+									<h2 class="_title element-animation2">
+										Lorem ipsum dolor sit amet.
+									</h2>
+									<div class="level-box element-animation2">
+										<p><span>10 </span> Lorem, ipsum.</p>
+										<p><span>2 </span> Lorem, ipsum.</p>
+										<p><span>150 </span> Lorem, ipsum.</p>
+										<p><span>20 000</span> Lorem </p>
+									</div>
+								</div>
+								<div class="circle-container circle-animation element-animation2">
+									<div class="text">2020</div>
+								</div>
+
+
+							</div>
+						</div>
+
+			</section>
+			<section class="faq_main">
+				<div class="faq__container">
+					<h2 class="_title">
+						<span>Lorem ipsum dolor sit amet. </span>pytania
+					</h2>
+					<div class="faq-list">
+						<div class="faq-item">
+							<a href="#" class="spoiler-trigger btn-white faq-btn ">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, blanditiis.</p> <span class="icon-arrow-down">❯</span>
+							</a>
+							<div class="spoiler-block faq-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								maxime quisquam
+								commodi id quibusdam ipsam vel accusamus autem ab provident! Et consequuntur minima ad repudiandae
+								nemo. Temporibus dolore illo sint.</div>
+						</div>
+						<div class="faq-item">
+							<a href="#" class="spoiler-trigger btn-white faq-btn">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, blanditiis.</p> <span class="icon-arrow-down">❯</span>
+							</a>
+							<div class="spoiler-block faq-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								maxime quisquam
+								commodi id quibusdam ipsam vel accusamus autem ab provident! Et consequuntur minima ad repudiandae
+								nemo. Temporibus dolore illo sint.</div>
+						</div>
+						<div class="faq-item">
+							<a href="#" class="spoiler-trigger btn-white faq-btn">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, blanditiis.</p> <span class="icon-arrow-down">❯</span>
+							</a>
+							<div class="spoiler-block faq-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								maxime quisquam
+								commodi id quibusdam ipsam vel accusamus autem ab provident! Et consequuntur minima ad repudiandae
+								nemo. Temporibus dolore illo sint.</div>
+						</div>
+						<div class="faq-item">
+							<a href="#" class="spoiler-trigger btn-white faq-btn">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, blanditiis.</p> <span class="icon-arrow-down">❯</span>
+							</a>
+							<div class="spoiler-block faq-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								maxime quisquam
+								commodi id quibusdam ipsam vel accusamus autem ab provident! Et consequuntur minima ad repudiandae
+								nemo. Temporibus dolore illo sint.</div>
+						</div>
+						<div class="faq-item">
+							<a href="#" class="spoiler-trigger btn-white faq-btn">
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, blanditiis.</p> <span class="icon-arrow-down">❯</span>
+							</a>
+							<div class="spoiler-block faq-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								maxime quisquam
+								commodi id quibusdam ipsam vel accusamus autem ab provident! Et consequuntur minima ad repudiandae
+								nemo. Temporibus dolore illo sint.</div>
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+			<section class="main_company">
+				<div class="company__container">
+					<div class="content">
+						<h3 class="title_company _title">About us</h3>
+						<p class="text_company">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt
+							corporis facere odio! Eaque esse animi impedit earum facilis quia autem
+							dignissimos commodi ipsum, blanditiis, vero sit enim. Ipsum, dolor!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt
+							corporis facere odio! Eaque esse animi impedit earum facilis quia autem
+							dignissimos commodi ipsum, blanditiis, vero sit enim. Ipsum, dolor!
+						</p>
+						<p class="text_company">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt
+							corporis facere odio! Eaque esse animi impedit earum facilis quia autem
+							dignissimos commodi ipsum, blanditiis, vero sit enim. Ipsum, dolor!
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt
+							corporis facere odio! Eaque esse animi impedit earum facilis quia autem
+							dignissimos commodi ipsum, blanditiis, vero sit enim. Ipsum, dolor!
+						</p>
+					</div>
+					<div class="company_img">
+						<picture><source srcset="img/as.webp" type="image/webp"><img src="img/as.jpg" alt=""></picture>
+					</div>
+				</div>
+
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer_list">
+					<ul>
+						<h3>Main Office:</h3>
+						<address>
+							<a href="#"> ul. adrees 8,<br> 43-450 City</a> <br><br>
+							<a href="tel:+48334712131">+77 33 121 21 31</a> <br>
+							<a href="mailto:info@dreamapart.pl">info@gmail.pl</a>
+
+						</address>
+						<div class="socials ">
+
+							<a href="#" class="media-item _icon-ic-twitter"><img src="img/icons/twitter.svg" alt=""></a>
+							<a href="#" class="media-item _icon-ic-facebook"><img src="img/icons/facebook.svg" alt=""></a>
+							<a href="#" class="media-item _icon-ic-instagram"><img src="img/icons/instagram.svg" alt=""></a>
+						</div>
+					</ul>
+					<ul>
+						<h3>Sitemap:</h3>
+						<li> <a href="index.html">Strona główna</a> </li>
+						<li> <a href="#">Kontakt</a> </li>
+						<li> <a href="#">Kontakt</a> </li>
+						<li> <a href="#">Kontakt</a> </li>
+					</ul>
+
+					<ul>
+
+						<li>
+							<h3>Work Schedule</h3>
+						</li>
+						<li>
+							Mon: 09:00–20:00
+						</li>
+						<li>
+							Tue: 09:00–20:30
+						</li>
+						<li>
+							Wed: 09:00–20:00
+						</li>
+						<li>
+							Thu: 09:00–20:00
+						</li>
+						<li>
+							Fri: 09:00–20:00
+						</li>
+						<li>
+							Sat: 09:00–14:00
+						</li>
+						<li>
+							d: 09:00–14:00
+						</li>
+					</ul>
+
+				</div>
+				<div class="footer-hashtags">
+
+
+					<ul>
+
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+					</ul>
+					<ul>
+
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+					</ul>
+					<ul>
+
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+					</ul>
+					<ul>
+
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtaghashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+						<li><a href="#">
+								#hashtag
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+
+
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230830053506" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230830053506"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js?_v=20230830053506"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js?_v=20230830053506"></script>
+	<script src="js/app.min.js?_v=20230830053506"></script>
+</body>
+
+</html>
