@@ -1554,6 +1554,11 @@ h6 {
 
 .company_img {
   flex: 1 0 45%;
+  border-radius: 30px;
+  position: relative;
+  padding-bottom: 27.25%; /* Здесь используется соотношение сторон 16:9, но замените его на соотношение вашего видео */
+  height: 0;
+  overflow: hidden;
 }
 @media (max-width: 79.99875em) {
   .company_img {
@@ -1566,11 +1571,29 @@ h6 {
   }
 }
 .company_img img,
-.company_img video {
+.company_img video,
+.company_img iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
+}
+@media (max-width: 79.99875em) {
+  .company_img {
+    padding-bottom: 45%; /* Здесь используется соотношение сторон 16:9, но замените его на соотношение вашего видео */
+  }
+}
+@media (max-width: 47.99875em) {
+  .company_img {
+    padding-bottom: 56.4%; /* Здесь используется соотношение сторон 16:9, но замените его на соотношение вашего видео */
+  }
+}
+.company_img iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .company__container {
   display: flex;
