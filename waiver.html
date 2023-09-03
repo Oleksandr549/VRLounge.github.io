@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230902220342"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic&_v=20230902220342"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&_v=20230902220342"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&_v=20230902220342"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+
+      <header class="header">
+        <div class="header__container">
+          <a class="logo" href="index.html">
+            <img src="img/icons/White logo.svg" alt=""
+          /></a>
+          <ul class="nav-container">
+            <button type="button" class="close">
+              <span class="icon-close"></span>
+            </button>
+
+            <li class="hover-trigger element-animation">
+              <a href="#cards">Attractions</a>
+            </li>
+            <li class="hover-trigger element-animation">
+              <a href="#about-us">About us</a>
+            </li>
+            <li class="hover-trigger element-animation">
+              <a href="#footer">Contact</a>
+            </li>
+            <li class="hover-trigger element-animation">
+              <a href="#faq_main">FAQs</a>
+            </li>
+            <li class="hover-trigger element-animation">
+              <a href="/waiver.php">Waiver</a>
+            </li>
+
+            <!-- <button type="button" class="btn-gr">Your Virtual Land</button> -->
+          </ul>
+          <div class="burger_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+
+      <main class="page waiver_main">
+        <div class="waiver__container">
+          <div class="waiver-container">
+            <h2 class="waiver_title">Liability waiver</h2>
+            <h4 class="waiver_subtitle">Participant Information:</h4>
+            <form method="post">
+              <div class="form-container">
+                <label for="username">Full Name</label>
+                <input type="text" name="username" id="username" />
+
+                <label for="birth">Date of Birth</label>
+                <input type="date" name="birth" id="birth" />
+
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" />
+
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" />
+
+                <label for="emergency-contact">Emergency Contact</label>
+                <input
+                  type="text"
+                  name="emergency-contact"
+                  id="emergency-contact"
+                />
+                <label for="relationship-to-participant"
+                  >Relationship to Participant</label
+                >
+                <input
+                  type="text"
+                  name="relationship-to-participant"
+                  id="relationship-to-participant"
+                />
+                <label for="phone-emergency"
+                  >Emergency Contact Phone Number</label
+                >
+                <input
+                  type="number"
+                  name="phone-emergency"
+                  id="phone-emergency"
+                />
+              </div>
+
+              <h4 class="waiver_subtitle">Health and Safety Acknowledgment:</h4>
+              <h5 class="waiver_subtitle">
+                I, the undersigned participant, understand and acknowledge the
+                following:
+              </h5>
+
+              <p class="waiver_text">
+                Health and Physical Condition: I am in good health and do not
+                have any medical conditions, disabilities, or injuries that
+                could be aggravated or worsened by participating in virtual
+                reality (VR) and motion-based activities. I understand that VR
+                experiences may induce motion sickness, disorientation, and
+                other adverse effects, and I am participating voluntarily with
+                full awareness of the potential risks.
+              </p>
+
+              <p class="waiver_text">
+                Pregnancy and Medical Conditions: I am not pregnant, and I do
+                not have any medical conditions (such as heart conditions,
+                epilepsy, severe motion sickness, etc.) that might be adversely
+                affected by participating in VR motion experiences.
+              </p>
+              <p class="waiver_text">
+                Medical Treatment: In the event of an injury or medical
+                emergency, I authorize the unVReal VR staff to administer first
+                aid and, if necessary, seek medical treatment on my behalf.
+              </p>
+              <p class="waiver_text">
+                Assumption of Risk: I am aware that participating in VR motion
+                activities involves certain inherent risks, including but not
+                limited to physical injury, motion sickness, dizziness, and
+                discomfort. I willingly assume all such risks associated with my
+                participation.
+              </p>
+              <p class="waiver_text">
+                Instructions and Guidelines: I agree to follow all instructions
+                provided by unVReal VR staff regarding the proper use of VR
+                equipment and adherence to safety guidelines.
+              </p>
+              Release of Liability: In consideration of being allowed to
+              participate in VR motion activities at unVReal VR, I hereby
+              release, waive, discharge, and hold harmless unVReal VR and its
+              employees, agents, and affiliates from any and all liability,
+              claims, demands, actions, or causes of action arising out of or
+              related to any loss, injury, or damage that I may sustain while
+              participating in VR motion activities.
+              <h5 class="waiver_subtitle">
+                Consent for Minors (if applicable):
+              </h5>
+
+              <p class="waiver_text">
+                If the participant is a minor, I, as the parent or legal
+                guardian, hereby give my consent for my child to participate in
+                VR motion activities at unVReal VR Lounge. I acknowledge that I
+                have read and understand the contents of this form and that I am
+                agreeing to the terms on behalf of the minor participant.
+              </p>
+
+              <div class="form-container">
+                <label for="signature">Participant's Signature</label>
+                <input type="text" name="signature" id="signature" />
+                <label for="signature-a-minor"
+                  >Parent/Guardian Signature (if participant is a minor):</label
+                >
+                <input
+                  type="text"
+                  name="signature-a-minor"
+                  id="signature-a-minor"
+                />
+              </div>
+              <div class="form-container">
+                <h4 class="waiver_subtitle">Witness (VR Motion Park Staff):</h4>
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+                <label for="signature-witness">Signature: </label>
+                <input
+                  type="text"
+                  name="signature-witness"
+                  id="signature-witness"
+                />
+              </div>
+
+              <p class="waiver_text">
+                Please retain a copy of this form for your records. By signing
+                this form, you acknowledge that you have read, understood, and
+                agreed to its terms and conditions.
+              </p>
+              <div
+                class="block-error"
+                style="display: none"
+                id="error-block"
+              ></div>
+              <div
+                class="block-error"
+                style="display: none"
+                id="error-block"
+              ></div>
+              <button type="button" id="waiver_user" class="btn-sub btn-gr">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__container">
+          <div class="footer_list">
+            <ul>
+              <a class="logo" href="index.html">
+                <img src="img/icons/White logo.svg" alt=""
+              /></a>
+              <address>
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps/place/15561+S+94th+Ave,+Orland+Park,+IL+60462,+%D0%A1%D0%A8%D0%90/@41.6080752,-87.8475219,17z/data=!3m1!4b1!4m6!3m5!1s0x880e3f8e57d4d777:0x566d1d3f93628ef9!8m2!3d41.6080752!4d-87.8475219!16s%2Fg%2F11pw38dxkn?entry=ttu"
+                >
+                  15561 S 94TH AVE<br />
+                  Orland Park IL 60462</a
+                >
+                <br /><br />
+                <a target="_blank" href="tel:7089494395">708-949-4395</a> <br />
+              </address>
+              <div class="socials">
+                <a target="_blank" href="#" class="media-item _icon-ic-twitter"
+                  ><img src="img/icons/twitter.svg" alt=""
+                /></a>
+                <a target="_blank" href="#" class="media-item _icon-ic-facebook"
+                  ><img src="img/icons/facebook.svg" alt=""
+                /></a>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="media-item _icon-ic-instagram"
+                  ><img src="img/icons/instagram.svg" alt=""
+                /></a>
+              </div>
+            </ul>
+            <ul>
+              <h3>Sitemap:</h3>
+
+              <li><a target="_blank" href="index.html">Home</a></li>
+              <li><a href="#cards">Attractions</a></li>
+              <li>
+                <a download href="file/umVRral VR Safety Release Form.docx"
+                  >Waiver</a
+                >
+              </li>
+              <li><a href="#about-us">About us</a></li>
+              <li><a href="#faq_main">FAQs</a></li>
+            </ul>
+
+            <ul>
+              <h3>Hours:</h3>
+              <li>Monday: <span>CLOSED</span></li>
+              <li>Tuesday: <span>12-8PM</span></li>
+              <li>Wednesdays: <span>12-8PM</span></li>
+              <li>Thursday: <span>12-8PM</span></li>
+              <li>Friday: <span>12-8PM</span></li>
+              <li>Saturday: <span>10-8PM</span></li>
+              <li>Sunday: <span>10-6PM</span></li>
+            </ul>
+          </div>
+          <div class="footer-hashtags">
+            <ul>
+              <li><a target="_blank" href="#"> #VRDevices </a></li>
+              <li><a target="_blank" href="#"> #VRReality </a></li>
+              <li><a target="_blank" href="#"> #VREvents </a></li>
+              <li><a target="_blank" href="#"> #VRAdoption </a></li>
+              <li><a target="_blank" href="#"> #VRImmersive </a></li>
+              <li><a target="_blank" href="#"> #VREngage </a></li>
+            </ul>
+            <ul>
+              <li><a target="_blank" href="#"> #VRCreations </a></li>
+              <li><a target="_blank" href="#"> #VRWorld </a></li>
+              <li><a target="_blank" href="#"> #VREducation </a></li>
+              <li><a target="_blank" href="#"> #VRRacing </a></li>
+              <li><a target="_blank" href="#"> #VRTechnology </a></li>
+              <li><a target="_blank" href="#"> #VirtualReality </a></li>
+            </ul>
+            <ul>
+              <li><a target="_blank" href="#"> #VRAdventures </a></li>
+              <li><a target="_blank" href="#"> #VROfficial </a></li>
+              <li><a target="_blank" href="#"> #VRLearning </a></li>
+              <li><a target="_blank" href="#"> #VRSports </a></li>
+              <li><a target="_blank" href="#"> #VRLifestyle </a></li>
+              <li><a target="_blank" href="#"> #VRArcade </a></li>
+            </ul>
+            <ul>
+              <li><a target="_blank" href="#"> #VRTech </a></li>
+              <li><a target="_blank" href="#"> #VRGaming </a></li>
+              <li><a target="_blank" href="#"> #VRFuture </a></li>
+              <li><a target="_blank" href="#"> #VRControllers </a></li>
+              <li><a target="_blank" href="#"> #VRExperience </a></li>
+              <li><a target="_blank" href="#"> #VRExperiments </a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js?_v=20230902220342"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230902220342"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js?_v=20230902220342"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js?_v=20230902220342"></script>
+    <script src="js/app.min.js?_v=20230902220342"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+      $("#waiver_user").click(function () {
+        const username = $("#username").val();
+        const birth = $("#birth").val();
+        const address = $("#address").val();
+        const phone = $("#phone").val();
+        const emergencyContact = $("#emergency-contact").val();
+
+        const relationshipToParticipant = $(
+          "#relationship-to-participant"
+        ).val();
+        const phoneEmergency = $("#phone-emergency").val();
+        const name = $("#name").val();
+        const signatureWitness = $("#signature-witness").val();
+        $.ajax({
+          url: "ajax/waiver.php",
+          type: "POST",
+          cacha: false,
+          data: {
+            username: username,
+            birth: birth,
+            address: address,
+            phone: phone,
+            emergencyContact: emergencyContact,
+            relationshipToParticipant: relationshipToParticipant,
+            phoneEmergency: phoneEmergency,
+            name: name,
+            signatureWitness: signatureWitness,
+          },
+          dataType: "html",
+          success: function (data) {
+            if (data == "Ready") {
+              $("#waiver_user").text("All is Ready");
+              $("#error-block").hide();
+              $("#username").val("");
+              $("#birth").val("");
+              $("#address").val("");
+              $("#phone").val("");
+              $("#emergency-contact").val("");
+              $("#relationship-to-participant").val("");
+              $("#phone-emergency").val("");
+              $("#name").val("");
+              $("#signature-witness").val("");
+              $("#signature").val("");
+              $("#signature-a-minor").val("");
+            } else {
+              $("#error-block").show();
+              $("#error-block").text(data);
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

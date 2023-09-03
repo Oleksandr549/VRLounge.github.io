@@ -560,7 +560,8 @@ h6 {
 	}
 }
 */
-.stars, .twinkling {
+.stars,
+.twinkling {
   position: absolute;
   top: 0;
   left: 0;
@@ -1402,7 +1403,8 @@ h6 {
 .card-section p {
   line-height: 1.5em;
 }
-.card-section h1 + p, .card-section p + p {
+.card-section h1 + p,
+.card-section p + p {
   margin-top: 10px;
 }
 .card-section .container {
@@ -1423,7 +1425,8 @@ h6 {
 .card-section .card-wrap:hover .card-info p {
   opacity: 1;
 }
-.card-section .card-wrap:hover .card-info, .card-section .card-wrap:hover .card-info p {
+.card-section .card-wrap:hover .card-info,
+.card-section .card-wrap:hover .card-info p {
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .card-section .card-wrap:hover .card-info:after {
@@ -1634,6 +1637,110 @@ h6 {
   .text_company {
     font-size: 16px;
   }
+}
+
+.waiver-container {
+  padding: 50px 60px;
+  border-radius: 30px;
+  background: linear-gradient(0deg, rgba(24, 128, 192, 0.5), rgba(24, 28, 144, 0.5));
+  box-shadow: 0px 0px 14px hsla(0deg, 0%, 0%, 0.5);
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  line-height: 150%;
+  font-size: 16px;
+}
+@media (max-width: 47.99875em) {
+  .waiver-container {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 24.99875em) {
+  .waiver-container {
+    border-radius: 0px;
+    padding: 40px 20px;
+    box-shadow: none;
+  }
+}
+.waiver-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 47.99875em) {
+  .waiver-container form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.waiver-container form label {
+  margin-top: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.waiver-container form input {
+  max-width: 500px;
+  height: 24px;
+  font-size: 16px;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: black;
+  outline: none;
+  border-bottom: 1px white solid;
+}
+@media (max-width: 47.99875em) {
+  .waiver-container form input {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.waiver_main {
+  background: linear-gradient(0deg, rgba(208, 46, 240, 0.2), rgba(9, 206, 255, 0.3));
+}
+
+.form-container {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 24.99875em) {
+  .waiver__container {
+    padding: 0;
+  }
+}
+.waiver__container .waiver_title {
+  font-size: 36px;
+  text-align: center;
+  padding: 0 0 50px 0;
+  font-weight: 600;
+}
+.waiver__container h4.waiver_subtitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.waiver__container h5.waiver_subtitle {
+  font-weight: 600;
+}
+.btn-sub {
+  margin: 0 auto;
+  padding: 15px 40px;
+}
+
+#error-block {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px red;
+  background: rgba(255, 0, 0, 0.5);
 }
 
 .socials {
