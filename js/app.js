@@ -10,6 +10,8 @@
     }
   }, 0),
     $(function () {
+      //========================================================================================================================================================
+
       if (null !== document.querySelector(".home_main")) {
         const e = document.querySelector(".header").offsetHeight + "px";
         document.querySelector(".home_main").style.paddingTop = e;
@@ -57,16 +59,17 @@
             a.classList.remove("is-active");
           });
       }
-      if (null !== document.querySelector(".mySwiperlevel")) {
-        new Swiper(".mySwiperlevel", {
-          direction: "vertical",
-          speed: 1e3,
-          loop: !0,
-          pagination: { el: ".swiper-pagination", clickable: !0 },
-          allowTouchMove: !1,
-          autoplay: { delay: 5e3, disableOnInteraction: !1 },
-        });
-      }
+      // if (null !== document.querySelector(".mySwiperlevel")) {
+      //   new Swiper(".mySwiperlevel", {
+      //     direction: "vertical",
+      //     speed: 1e3,
+      //     loop: !0,
+      //     pagination: { el: ".swiper-pagination", clickable: !0 },
+      //     allowTouchMove: !1,
+      //     autoplay: { delay: 5e3, disableOnInteraction: !1 },
+      //   });
+      // }
+
       if (null !== document.querySelector(".circle-container")) {
         function c(e) {
           e.forEach((e) => {
@@ -197,6 +200,77 @@
             1268: { slidesPerView: 5 },
             1600: { slidesPerView: 6 },
           },
+        });
+      }
+      if (null !== document.querySelector(".mySwiperPopup")) {
+        // Найти все элементы с классом "mySwiper1"
+        const swiperElements = document.querySelectorAll(".mySwiperPopup");
+
+        // Перебрать все найденные элементы и создать для каждого свой экземпляр Swiper
+        swiperElements.forEach((element) => {
+          const swiper = new Swiper(element, {
+            slidesPerView: 3,
+            initialSlide: 1,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            },
+            pagination: {
+              el: element.querySelector(".swiper-paginationPopup"), // Используйте .querySelector внутри текущего элемента для поиска пагинации
+            },
+          });
+        });
+      }
+      if (null !== document.querySelector(".openPopup")) {
+        // Получаем все кнопки для открытия Popup
+        const openButtons = document.querySelectorAll(".openPopup");
+        console.log(openButtons);
+        // Добавляем обработчик события для каждой кнопки
+        openButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const popupId = button.getAttribute("data-popup");
+            const popup = document.getElementById(popupId);
+            popup.style.display = "block";
+
+            // Заблокировать скролл фона
+            document.body.classList.add("popup-open");
+          });
+        });
+
+        // Получаем все элементы для закрытия Popup
+        const closeButtons = document.querySelectorAll(".close1");
+
+        // Добавляем обработчик события для каждой кнопки закрытия
+        closeButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const popupId = button.getAttribute("data-close");
+            const popup = document.getElementById(popupId);
+            popup.style.display = "none";
+
+            // Разблокировать скролл фона
+            document.body.classList.remove("popup-open");
+          });
+        });
+
+        // Закрыть Popup при клике вне него
+        window.addEventListener("click", (event) => {
+          if (event.target.classList.contains("popup")) {
+            event.target.style.display = "none";
+
+            // Разблокировать скролл фона
+            document.body.classList.remove("popup-open");
+          }
         });
       }
     });
